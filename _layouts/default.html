@@ -28,39 +28,39 @@
 
         <h1 id="section1">DATABASE TIER</h1>
         <h1>Step 1: Create dockerfile for MongoDB</h1>
-        <img src="/images/0.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/0.png" alt="">
         <h1>Step 2: Create Network</h1>
         <p><b>List available networks : </b>docker network ls <br><b>Create a Docker network : </b>docker network create ia2</p>
-        <img src="/images/1.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/1.png" alt="">
 
         <h1>Step 3: Connecting MongoDB Container to Network</h1>
         <p><b>Build Docker image for MongoDB :</b> docker build -t 21bcp113-mongodb ./mongodb</p>
-        <img src="/images/2.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/2.png" alt="">
         <p><b>Run MongoDB container :</b> docker run -d --name 21bcp113-mongodb-container --network ia2 21bcp113-mongodb</p>
-        <img src="/images/3.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/3.png" alt="">
         
         <h1 id="section2">BACKEND TIER</h1>
         <h1>Step 4: Create dockerfile for Backend</h1>
-        <img src="/images/9.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/9.png" alt="">
 
         <h1>Step 5: Building and Running Node.js Backend Container</h1>
         <p><b>Build Docker image for NodeJS backend : </b>docker build -t 21bcp113-backend ./backend</p>
-        <img src="/images/4.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/4.png" alt="">
         <p><b>Run NodeJS backend container : </b>docker run -d --name 21bcp113-backend-container --network ia2 21bcp113-backend</p>
-        <img src="/images/5.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/5.png" alt="">
 
         <h1 id="section3">FRONTEND TIER</h1>
         <h1>Step 6: Create dockerfile for Frontend</h1>
-        <img src="/images/10.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/10.png" alt="">
 
         <h1>Step 7: Building and Running React Frontend Container</h1>
         <p><b>Build Docker image for Frontend : </b>docker build -t 21bcp113-frontend ./frontend</p>
-        <img src="/images/6.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/6.png" alt="">
         <p><b>Run frontend container : </b>docker run -d --name 21bcp113-frontend-container --network ia2 21bcp113-frontend</p>
-        <img src="/images/7.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/7.png" alt="">
 
         <h1>Step 8: Look for containers at Docker Desktop</h1>
-        <img src="/images/8.png" alt="">
+        <img src="https://vatsalgabani64.github.io/three-tier-docker-app/images/8.png" alt="">
         
 
     </div>
